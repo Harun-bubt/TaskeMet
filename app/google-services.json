@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "479132968853",
+    "firebase_url": "https://taskmate-54dba-default-rtdb.firebaseio.com",
+    "project_id": "taskmate-54dba",
+    "storage_bucket": "taskmate-54dba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479132968853:android:f507c3e2167895049df89c",
+        "android_client_info": {
+          "package_name": "com.AppValley.TaskMet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479132968853-v85a4qiav9npg96ahs06jhmfoa5hplc2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.AppValley.TaskMet",
+            "certificate_hash": "29d063980eb14b7231baec9fa1478ac0feaa5a55"
+          }
+        },
+        {
+          "client_id": "479132968853-caionq98j4k4na1jphcstesibis7ng04.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu_XRBifiD6mUpU0IEGX04kdw3ut8VxLk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479132968853-caionq98j4k4na1jphcstesibis7ng04.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

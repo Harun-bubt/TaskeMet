@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostPurchases.PostAdLastScreen">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_gradient">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/ad_premium"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolBar"
+        android:layout_above="@+id/bottom">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:text="Promote this Ad"
+                android:textColor="@color/text_color1"
+                android:textSize="20sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/post_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/heading"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:id="@+id/main_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_post_live"
+                    android:orientation="vertical"
+                    android:paddingStart="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="8dp">
+
+                    <ImageView
+                        android:id="@+id/post_type"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="end"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/icon_status_normal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="end"
+                            android:layout_margin="5dp"
+                            android:layout_weight="0.9"
+                            android:elevation="3dp"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="3dp">
+
+                            <ImageView
+                                android:id="@+id/my_post_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@string/image"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/avatar" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="2.1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/my_post_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/proxima_nova_bold"
+                                android:maxLines="1"
+                                android:text="Gaming PC is for sell."
+                                android:textColor="@color/text_color1"
+                                android:textSize="17sp" />
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp">
+
+                                <ImageView
+                                    android:id="@+id/icon_date"
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:src="@drawable/icon_status_dates" />
+
+                                <TextView
+                                    android:id="@+id/my_post_date"
+                                    android:layout_width="120dp"
+                                    android:layout_height="15dp"
+                                    android:layout_toEndOf="@id/icon_date"
+                                    android:drawablePadding="5dp"
+                                    android:text="22-02-2025"
+                                    android:gravity="center_vertical"
+                                    android:textColor="@color/text_color1"
+                                    android:textSize="14sp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp">
+
+                                <ImageView
+                                    android:id="@+id/icon_category"
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:src="@drawable/icon_status_category" />
+
+                                <TextView
+                                    android:id="@+id/my_post_category"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:layout_toEndOf="@id/icon_category"
+                                    android:drawablePadding="5dp"
+                                    android:gravity="center_vertical"
+                                    android:text="Shopping"
+                                    android:textColor="@color/text_color1"
+                                    android:textSize="14sp" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:id="@+id/icon_status"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginEnd="5dp"
+                            android:src="@drawable/icon_status_posted" />
+
+                        <TextView
+                            android:id="@+id/post_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/icon_status"
+                            android:fontFamily="@font/proxima_nova_bold"
+                            android:gravity="center_vertical"
+                            android:text="Ad is live"
+                            android:textColor="@color/text_color"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="bottom"
+                        android:paddingBottom="2dp">
+
+                        <ImageView
+                            android:id="@+id/view"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginEnd="5dp"
+                            android:contentDescription="@string/image"
+                            android:src="@drawable/icon_view" />
+
+                        <TextView
+                            android:id="@+id/post_views"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginEnd="8dp"
+                            android:layout_toEndOf="@+id/view"
+                            android:gravity="center"
+                            android:text="500"
+                            android:textColor="@color/text_color1"
+                            android:textSize="14sp" />
+
+
+                        <ImageView
+                            android:id="@+id/heart"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginEnd="5dp"
+                            android:layout_toEndOf="@+id/post_views"
+                            android:contentDescription="@string/_1_20"
+                            android:gravity="center"
+                            android:src="@drawable/icon_heart" />
+
+                        <TextView
+                            android:id="@+id/post_likes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toEndOf="@+id/heart"
+                            android:gravity="center"
+                            android:text="300"
+                            android:textColor="@color/text_color1"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/post_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/btn_sign_in"
+                            android:elevation="10dp"
+                            android:fontFamily="@font/proxima_nova_bold"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:text="Sold"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/post_now_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/post_card"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:text="Posting information"
+                    android:textColor="@color/Theme1"
+                    android:textSize="22sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="end"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/icon_status_wait" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:maxLines="1"
+                        android:text="wait 1 day to post this Ad"
+                        android:textColor="@color/text_color1"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/feature2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/feature1"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="end"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/icon_status_gold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:maxLines="1"
+                        android:text="Post now using GCs or RCs"
+                        android:textColor="@color/text_color1"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/premium_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/post_card"
+                android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/heading2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:text="@string/features"
+                android:textColor="@color/orange"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:id="@+id/feature1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/heading2"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="end"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/icon_status_gold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:maxLines="1"
+                    android:text="Ad with Premium Tag"
+                    android:textColor="@color/text_color1"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="end"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/icon_status_gold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:maxLines="1"
+                    android:text="Show on the top of list"
+                    android:textColor="@color/text_color1"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/feature3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="end"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/icon_status_gold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:maxLines="1"
+                    android:text="Reach 10 times more buyers."
+                    android:textColor="@color/text_color1"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/feature4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="end"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/icon_status_gold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:maxLines="1"
+                    android:text="10 times faster sell then normal Ad."
+                    android:textColor="@color/text_color1"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_premium"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/premium_button"
+            android:elevation="8dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:text="Make this Ad premium"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+
+        <Button
+            android:id="@+id/btn_view_ad"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_sign_in"
+            android:elevation="8dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:text="View Ad Details"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

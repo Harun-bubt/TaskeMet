@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_gradient"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/backArrowImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_arrow_back_white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/add_post_details"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_below="@id/toolBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/job_type"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color1"
+                android:layout_marginBottom="@dimen/jobScreen_bottom_margin"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnJobOffer"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="@string/offering_job"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/button_selected"
+                    android:textColor="@color/Theme1"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textSize="15sp"/>
+
+                <Button
+                    android:id="@+id/btnCvResume"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="CV / Resume"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/text_light_gray"
+                    android:gravity="center"
+                    android:background="@drawable/button_unselected"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/jobCategoryTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="@dimen/jobScreen_bottom_margin"
+                        android:text="Job Category*"/>
+                    <Spinner
+                        android:id="@+id/jobCategorySpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:layout_marginStart="-8dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color1"
+                        android:autofillHints="e.g Hourly/Monthly" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/positionTypeTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/jobScreen_bottom_margin"
+                        android:textColor="@color/black"
+                        android:text="Position Type*"/>
+                    <Spinner
+                        android:id="@+id/positionTypeSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:layout_marginStart="-8dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color1"
+                        android:autofillHints="e.g Hourly/Monthly" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/text_color1"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/salaryPeriodTextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="16sp"
+                    android:text="Salary Period*"/>
+                <Spinner
+                    android:id="@+id/salaryCategorySpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:textSize="16sp"
+                    android:layout_marginStart="-8dp"
+                    android:textColor="@color/text_color1"
+                    android:autofillHints="e.g Hourly/Monthly" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/text_color1"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Job Title *"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color1"
+                android:layout_marginBottom="4dp"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/editTextJobTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:background="@null"
+                    android:hint="write job title"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_color1"/>
+
+                <ImageView
+                    android:id="@+id/iconImageJobTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/icon_information"
+                    android:contentDescription="TODO" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/text_color1"/>
+
+            <LinearLayout
+                android:id="@+id/layoutSalaryFromSalaryTo"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/jobScreen_bottom_margin"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="8dp"
+                        android:text="Salary From"/>
+
+                    <EditText
+                        android:id="@+id/salaryFromEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:padding="4dp"
+                        android:inputType="numberSigned" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="8dp"
+                        android:text="Salary to" />
+
+
+                    <EditText
+                        android:id="@+id/salaryToEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:padding="4dp"
+                        android:inputType="numberSigned"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textViewDescribtionAboutJob"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Describe job you're offering*"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color1"
+                android:layout_marginBottom="4dp"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/jobDescriptionEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:background="@null"
+                    android:hint="Write job details"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_color1"
+                    android:autofillHints="i.e. I want to sell my mobile." />
+
+                <ImageView
+                    android:id="@+id/iconImageJobDescribtion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/icon_information"
+                    android:contentDescription="TODO" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/text_color1"/>
+
+            <LinearLayout
+                android:id="@+id/layoutCompanyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Company name*"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_color1"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="16sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <EditText
+                        android:id="@+id/companyNameEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:background="@null"
+                        android:hint="Your company name"
+                        android:inputType="text"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color1"
+                        android:autofillHints="i.e. I want to sell my mobile." />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/text_color1"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:text="Next"
+        android:paddingStart="60dp"
+        android:paddingEnd="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_next"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="17sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.AppValley.TaskMet">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:preserveLegacyExternalStorage="true"
+        android:requestLegacyExternalStorage="true"
+        android:resizeableActivity="true"
+        android:roundIcon="@drawable/logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OurProductApp"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:theme">
+        <activity android:name=".GoogleAdsTest.NativeAdTestActivity" />
+        <activity android:name=".GoogleAdsTest.MainActivity" />
+        <activity android:name=".ViewAdActivities.Screen2_Shopping_Ads_Activity" />
+        <activity android:name=".ViewAdActivities.Screen1_Common_Ads_Activity" />
+        <activity android:name=".ViewAdActivities.Screen3_Job_Ads_Activity" />
+        <activity android:name=".ViewAdActivities.Screen4_Marriage_Ads_Activity" />
+        <activity android:name=".ViewAdActivities.Screen5_Property_Ads_Activity" />
+        <activity
+            android:name=".Home.FragmentViewActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".Registration.Activity3_SignUp" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_api_key" />
+
+        <activity
+            android:name=".PostTask.PostTaskActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Registration.Activity2_Registration"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".GoogleMaps.MyMapActivity" />
+        <activity android:name=".Registration.Activity1_SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home.HomeScreen"
+            android:windowSoftInputMode="stateHidden" />
+
+        <service
+            android:name=".chatNotification.MyFireBaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo" />
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+    </application>
+
+</manifest>

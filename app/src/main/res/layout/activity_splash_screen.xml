@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Registration.Activity1_SplashScreen">
+
+    <RelativeLayout
+        android:id="@+id/onLineLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/green_gradient">
+
+        <LinearLayout
+            android:id="@+id/circle"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/white_circle"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/log_in"
+                android:src="@drawable/logo_transparent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/circle"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/progress_bar"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_above="@id/web_name"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/white" />
+
+        <TextView
+            android:id="@+id/web_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/website_name"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/offLineLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@drawable/green_gradient">
+
+        <ImageView
+            android:id="@+id/icon_no_network"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/log_in"
+            android:src="@drawable/icon_no_internet" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:gravity="center"
+            android:text="@string/no_active_connection"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_check_network"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/network_settings"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_ad_border"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

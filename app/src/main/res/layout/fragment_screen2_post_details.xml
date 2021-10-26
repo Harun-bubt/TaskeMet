@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostTask.PostTaskActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_gradient"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/backArrowImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_arrow_back_white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/add_post_details"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_below="@id/toolBar"
+        android:layout_above="@id/btnNext">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Post Title *"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color1"
+                android:layout_marginBottom="4dp"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/postTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:background="@null"
+                    android:hint="i.e. I want to sell my mobile."
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_color1"
+                    android:autofillHints="i.e. I want to sell my mobile." />
+
+                <ImageView
+                    android:id="@+id/post_title_info_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/icon_information"
+                    android:contentDescription="@string/image" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/text_color1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Category *"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color1"
+                android:layout_marginBottom="4dp"
+                android:textSize="16sp"/>
+
+
+                <Spinner
+                    android:id="@+id/categorySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:textSize="16sp"
+                    android:layout_marginStart="-8dp"
+                    android:padding="0dp"
+                    android:textColor="@color/text_color1"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/text_color1"/>
+
+            <LinearLayout
+                android:id="@+id/conditionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Condition *"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_color1"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="16sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="2"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnNew"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_unselected"
+                        android:gravity="center"
+                        android:text="New"
+                        android:textAllCaps="false"
+                        android:textColor="@color/text_light_gray"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/btnUsed"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:text="Used"
+                        android:background="@drawable/button_selected"
+                        android:textColor="@color/Theme1"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:textAllCaps="false"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/seekBarHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Condition of product out of 10."
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_color1"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="16sp"/>
+
+                <com.warkiz.widget.IndicatorStayLayout
+                    android:id="@+id/indicatorStayLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.warkiz.widget.IndicatorSeekBar
+                        android:id="@+id/seekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:isb_max="10"
+                        app:isb_min="1"
+                        app:isb_progress="9"
+                        app:isb_seek_smoothly="true"
+                        app:isb_ticks_count="10"
+                        app:isb_show_tick_marks_type="oval"
+                        app:isb_tick_marks_size="13dp"
+                        app:isb_show_tick_texts="true"
+                        app:isb_tick_texts_size="15sp"
+                        app:isb_tick_texts_color="@color/text_color1"
+                        app:isb_thumb_color="@color/Theme1"
+                        app:isb_thumb_size="22dp"
+                        app:isb_show_indicator="rounded_rectangle"
+                        app:isb_indicator_color="@color/Theme1"
+                        app:isb_indicator_text_color="@color/white"
+                        app:isb_indicator_text_size="18sp"
+                        app:isb_track_background_color="@color/black"
+                        app:isb_track_background_size="2dp"
+                        app:isb_track_progress_color="@color/Theme1"
+                        app:isb_track_progress_size="4dp"
+                        app:isb_tick_marks_color="@color/Theme1"
+                        app:isb_only_thumb_draggable="false"/>
+
+                </com.warkiz.widget.IndicatorStayLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@color/text_color1"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Set a Price *"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color1"
+                android:layout_marginBottom="4dp"
+                android:textSize="16sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/currencyText"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="8dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="3dp"
+                    android:textColor="@color/black"
+                    android:text=""/>
+
+                <EditText
+                    android:id="@+id/postPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:layout_toStartOf="@id/iconImagePostPrice"
+                    android:layout_toEndOf="@id/currencyText"
+                    android:hint="00"
+                    android:gravity="center_vertical"
+                    android:inputType="numberSigned"
+                    android:maxLength="6"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_color1"
+                    android:autofillHints="i.e. I want to sell my mobile." />
+
+                <ImageView
+                    android:id="@+id/iconImagePostPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/icon_information"
+                    android:contentDescription="@string/image" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/text_color1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Post Description *"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color1"
+                android:layout_marginBottom="4dp"
+                android:textSize="16sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/postDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="i.e. color and condition of product etc."
+                    android:inputType="text"
+                    android:layout_toEndOf="@id/iconImagePostDescription"
+                    android:textSize="16sp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/text_color1" />
+
+                <ImageView
+                    android:id="@+id/iconImagePostDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/icon_information"
+                    android:contentDescription="TODO" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/text_color1"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:text="Next"
+        android:paddingStart="60dp"
+        android:paddingEnd="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/h8"
+        android:background="@drawable/button_next"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="17sp"/>
+
+</RelativeLayout>

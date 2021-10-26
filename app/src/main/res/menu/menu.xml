@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home_selector"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/chat"
+        android:icon="@drawable/chat_selector"
+        android:title="@string/chat" />
+
+    <item
+        android:id="@+id/post_task"
+        android:icon="@drawable/post_ad_selector"
+        android:title="@string/post_ad" />
+
+    <item
+        android:id="@+id/my_task"
+        android:icon="@drawable/my_post_selector"
+        android:title="@string/my_task" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile_selector"
+        android:title="@string/profile" />
+
+</menu>

@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_gradient"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/backArrowImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_arrow_back_white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/add_property_details"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_below="@id/toolBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnRent"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="@string/rent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/button_selected"
+                    android:textColor="@color/Theme1"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textSize="15sp"/>
+
+                <Button
+                    android:id="@+id/btnSell"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="@string/sell"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/text_light_gray"
+                    android:gravity="center"
+                    android:background="@drawable/button_unselected"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/priceTextViewProperty"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Price:"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/currencyTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:gravity="center_vertical"
+                        android:layout_marginEnd="3dp"
+                        android:textColor="@color/black"
+                        android:text=""/>
+
+                    <EditText
+                        android:id="@+id/propertyPriceEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:layout_toEndOf="@id/currencyTextView"
+                        android:hint="00"
+                        android:layout_marginStart="2dp"
+                        android:gravity="center_vertical"
+                        android:inputType="numberSigned"
+                        android:maxLength="6"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color1"
+                        android:autofillHints="i.e. I want to sell my mobile." />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/text_color1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/propertyTypeTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="@dimen/jobScreen_bottom_margin"
+                        android:text="Property type*"/>
+                    <Spinner
+                        android:id="@+id/propertyTypeSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:textSize="16sp"
+                        android:layout_marginStart="-8dp"
+                        android:textColor="@color/text_color1"
+                        android:autofillHints="e.g Hourly/Monthly" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/text_color1"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/areaTypeTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/jobScreen_bottom_margin"
+                        android:textColor="@color/black"
+                        android:text="Area type*"/>
+                    <Spinner
+                        android:id="@+id/areaTypeSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:layout_marginStart="-8dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color1"
+                        android:autofillHints="e.g Hourly/Monthly" />
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/text_color1"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/layoutareaAndAreaUnit"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/jobScreen_bottom_margin"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Area*"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/areaEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="30dp"
+                        android:autofillHints=""
+                        android:inputType="text"
+                        android:padding="4dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="8dp"
+                        android:text="Area unit*" />
+
+
+                    <EditText
+                        android:id="@+id/areaUnitEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:layout_marginEnd="10dp"
+                        android:padding="4dp"
+                        android:inputType="text"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/all_furnished_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/furnishedLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/furnishedTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="8dp"
+                    android:text="Furnished?*"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnYes"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="@string/Yes"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/button_selected"
+                        android:textColor="@color/Theme1"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:textSize="15sp"/>
+
+                    <Button
+                        android:id="@+id/btnNo"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:text="@string/no"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="@color/text_light_gray"
+                        android:gravity="center"
+                        android:background="@drawable/button_unselected"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/jobScreen_bottom_margin"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Floor*"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/floorEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="30dp"
+                        android:autofillHints=""
+                        android:inputType="text"
+                        android:padding="4dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/total_floors" />
+
+
+                    <EditText
+                        android:id="@+id/totalFloorsEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:layout_marginEnd="10dp"
+                        android:padding="4dp"
+                        android:inputType="text"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Title*"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color1"
+                android:layout_marginBottom="4dp"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/editTextPropertyTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:background="@null"
+                    android:hint="write Ad title"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_color1"/>
+
+                <ImageView
+                    android:id="@+id/iconImagePropertyTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/icon_information"
+                    android:contentDescription="TODO" />
+
+            </LinearLayout>
+
+
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/text_color1"/>
+
+            <LinearLayout
+                android:id="@+id/layoutCompanyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Description*"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_color1"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="16sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <EditText
+                        android:id="@+id/descriptionPropertyEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:background="@null"
+                        android:hint="Write your property details"
+                        android:inputType="text"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_color1"
+                        android:autofillHints="i.e. I want to sell my mobile." />
+
+                    <ImageView
+                        android:id="@+id/iconImagePropertyDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/icon_information"
+                        android:contentDescription="TODO" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/text_color1"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:text="Next"
+        android:paddingStart="60dp"
+        android:paddingEnd="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_next"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="17sp"/>
+
+</RelativeLayout>

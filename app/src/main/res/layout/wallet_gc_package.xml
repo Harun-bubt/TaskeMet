@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title_gradient"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="GC Shop"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GC Packages"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:elevation="5dp"
+                    app:cardElevation="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="5dp"
+                    app:cardCornerRadius="8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/gc_package_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/freeTagP1"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/icon_free_gc_100"
+                            android:layout_alignParentEnd="true"
+                            android:scaleType="fitXY"
+                            android:layout_alignParentTop="true"/>
+
+                        <ImageView
+                            android:id="@+id/gcP1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:src="@drawable/icon_p1_gc"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/freeTagP1"/>
+
+                        <TextView
+                            android:id="@+id/p1gc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00 GC"
+                            android:textSize="18sp"
+                            android:layout_below="@+id/gcP1"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/proxima_nova_bold"
+                            android:textColor="@color/premium_1"/>
+
+                        <TextView
+                            android:id="@+id/p1PriceGc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/wallet_gc_bottom_gradient"
+                            android:text="Rs 00"
+                            android:padding="2dp"
+                            android:layout_below="@id/p1gc"
+                            android:gravity="center"
+                            android:fontFamily="@font/proxima_nova_bold"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:elevation="5dp"
+                    app:cardElevation="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="8dp"
+                    app:cardCornerRadius="8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/gc_package_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/freeTagP2"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/icon_free_gc_500"
+                            android:layout_alignParentEnd="true"
+                            android:scaleType="fitXY"
+                            android:layout_alignParentTop="true"/>
+
+                        <ImageView
+                            android:id="@+id/gcP2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:src="@drawable/icon_p2_gc"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/freeTagP2"/>
+
+                        <TextView
+                            android:id="@+id/p2gc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00 GC"
+                            android:textSize="18sp"
+                            android:layout_below="@+id/gcP2"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/proxima_nova_bold"
+                            android:textColor="@color/premium_1"/>
+
+                        <TextView
+                            android:id="@+id/p2PriceGc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/wallet_gc_bottom_gradient"
+                            android:text="Rs 00"
+                            android:padding="2dp"
+                            android:layout_below="@id/p2gc"
+                            android:gravity="center"
+                            android:fontFamily="@font/proxima_nova_bold"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:elevation="5dp"
+                    app:cardElevation="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="5dp"
+                    app:cardCornerRadius="8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/gc_package_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/freeTagP3"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/icon_free_gc_500"
+                            android:layout_alignParentEnd="true"
+                            android:scaleType="fitXY"
+                            android:layout_alignParentTop="true"/>
+
+                        <ImageView
+                            android:id="@+id/gcP3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:src="@drawable/icon_p3_gc"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/freeTagP3"/>
+
+                        <TextView
+                            android:id="@+id/p3gc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00 GC"
+                            android:textSize="18sp"
+                            android:layout_below="@+id/gcP3"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/proxima_nova_bold"
+                            android:textColor="@color/premium_1"/>
+
+                        <TextView
+                            android:id="@+id/p3PriceGc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/wallet_gc_bottom_gradient"
+                            android:text="Rs 00"
+                            android:padding="2dp"
+                            android:layout_below="@id/p3gc"
+                            android:gravity="center"
+                            android:fontFamily="@font/proxima_nova_bold"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:elevation="5dp"
+                    app:cardElevation="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="8dp"
+                    app:cardCornerRadius="8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/gc_package_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/freeTagP4"
+                            android:layout_width="75dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/icon_free_gc_1000"
+                            android:layout_alignParentEnd="true"
+                            android:scaleType="fitXY"
+                            android:layout_alignParentTop="true"/>
+
+                        <ImageView
+                            android:id="@+id/gcP4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:src="@drawable/icon_p4_gc"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/freeTagP4"/>
+
+                        <TextView
+                            android:id="@+id/p4gc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00 GC"
+                            android:textSize="18sp"
+                            android:layout_below="@+id/gcP4"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/proxima_nova_bold"
+                            android:textColor="@color/premium_1"/>
+
+                        <TextView
+                            android:id="@+id/p4PriceGc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/wallet_gc_bottom_gradient"
+                            android:text="Rs 00"
+                            android:padding="2dp"
+                            android:layout_below="@id/p4gc"
+                            android:gravity="center"
+                            android:fontFamily="@font/proxima_nova_bold"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="Get Gold Coins"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Select GC amount"
+                        android:layout_alignParentStart="true"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginEnd="3dp"
+                            app:cardCornerRadius="4dp"
+                            app:cardElevation="3dp"
+                            android:elevation="3dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textSize="25sp"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/proxima_nova_bold"
+                                android:textColor="@color/Theme2"/>
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.2"
+                            app:cardCornerRadius="4dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginEnd="3dp"
+
+                            app:cardElevation="3dp"
+                            android:elevation="3dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="500"
+                                android:textSize="16sp"
+                                android:gravity="center"
+                                android:textColor="@color/black"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            app:cardCornerRadius="4dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginEnd="3dp"
+                            app:cardElevation="3dp"
+                            android:elevation="3dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="+"
+                                android:textSize="25sp"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="@color/Theme2"/>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="#7C7878"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2.75">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Total Cost"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Rs. 00"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

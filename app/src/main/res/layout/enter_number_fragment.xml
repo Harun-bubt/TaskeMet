@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/welcomeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/enter_number_to_login"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/proxima_nova_regular"/>
+
+
+            <LinearLayout
+                android:id="@+id/countrycodeNumberLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/corner_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:ccpDialog_textColor="@color/black"
+                    app:ccp_contentColor="@color/black"
+                    app:ccp_textSize="16dp"
+                    app:ccp_showPhoneCode="true"
+                    app:ccp_showNameCode="false"
+                    app:ccp_defaultNameCode="bd" />
+
+                <EditText
+                    android:id="@+id/phoneEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/enter_number"
+                    android:autofillHints="@string/enter_number"
+                    android:background="@null"
+                    android:inputType="phone"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/continueButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/btn_continue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:paddingStart="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:paddingEnd="40dp"
+                android:textColor="@color/white"
+                android:elevation="10dp"
+                android:background="@drawable/btn_sign_in"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+</RelativeLayout>

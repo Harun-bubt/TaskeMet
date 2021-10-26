@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="15dp"
+    android:elevation="3dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/icon_profile_pic" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/profile"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sample Name"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/lastMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap to chat"
+                android:textSize="14sp"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/deleteImageIcon"
+            android:layout_marginEnd="10dp"
+            android:layout_centerInParent="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/icon_delete"/>
+
+
+
+        <TextView
+            android:id="@+id/msgTime"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textSize="12sp"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

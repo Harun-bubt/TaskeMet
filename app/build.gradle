@@ -1,0 +1,167 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    buildFeatures {
+        dataBinding = true
+        viewBinding true
+    }
+
+    defaultConfig {
+        applicationId "com.AppValley.TaskMet"
+        minSdkVersion 22
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'com.hbb20:ccp:2.4.5'
+    implementation 'com.chaos.view:pinview:1.4.4'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
+    testImplementation 'junit:junit:'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation platform('com.google.firebase:firebase-bom:26.5.0')
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'androidx.browser:browser:1.3.0'
+
+
+    //Lottie progress bar
+    def lottieVersion = "3.6.1"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
+    //dependency for chat module
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+
+    implementation 'com.google.firebase:firebase-firestore:23.0.3'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-storage'
+    implementation 'com.google.firebase:firebase-messaging:22.0.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation "com.github.pgreze:android-reactions:1.3"
+    implementation 'com.devlomi:circularstatusview:1.0.1'
+
+    //ZOOM Image View
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    //imageView for zoom Image
+    implementation 'com.github.hsmnzaydn:imagezoom:1.3.0'
+
+    //Multiple Image Selection
+    implementation 'gun0912.ted:tedimagepicker:1.1.10'
+
+    //SeekBAr
+    implementation 'com.github.warkiz.widget:indicatorseekbar:2.1.2'
+
+    //retrofit2
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    //OK HTTP
+    implementation 'com.squareup.okhttp3:okhttp:4.9.1'
+
+
+    //circular image view
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+ /*   //Currency picker
+    implementation 'com.github.midorikocak:currency-picker-android:1.2.1'*/
+
+    //timer
+    implementation 'com.github.rehmanmuradali:ticker:1.0.1'
+    implementation 'ir.samanjafari.easycountdowntimer:easycountdowntimer:2.5.0'
+
+    // Google services - Maps
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+    implementation "androidx.recyclerview:recyclerview-selection:1.1.0"
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation "com.google.android.gms:play-services-places:17.0.0"
+    implementation 'com.google.android.play:core:1.10.0'
+    implementation 'com.google.android.libraries.places:places:2.4.0'
+
+    //Image croper
+    implementation 'com.github.yalantis:ucrop:2.2.7'
+
+    //Loading Button...................
+    implementation 'br.com.simplepass:loading-button-android:2.2.0'
+    //get Real Time
+    implementation 'org.jsoup:jsoup:1.10.2'
+    implementation 'com.github.kk121:SecureTimer:v1.0'
+
+    //Dialog library
+    implementation 'com.github.f0ris.sweetalert:library:1.6.2'
+    
+   implementation 'com.github.wangjiegulu:rfab:2.0.0'
+
+    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+
+    //toggle Button
+    implementation 'com.github.angads25:toggle:1.1.0'
+
+    implementation 'com.github.isradeleon:Notify-Android:1.0.4'
+    // G-pay dependencies
+    implementation 'com.google.android.gms:play-services-wallet:18.1.3'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:24.1.1'
+    //seekbar
+    implementation "com.rizlee.view:rangeseekbar:1.0.0"
+
+    //google ad
+    implementation "androidx.recyclerview:recyclerview-selection:1.1.0"
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'com.jsibbold:zoomage:1.3.1'
+    // adding Admob SDk
+    implementation 'com.google.android.gms:play-services-ads:20.2.0'
+
+    implementation project(':nativetemplates')
+
+    //Checking Internet connection
+    implementation 'com.github.JobGetabu:DroidNet:v2.0.0'
+
+    //Progress bars
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
+    //Responsive screen (Views sdp & Text ssp)
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+
+}
+apply plugin: 'com.android.application'
+// Add this line
+apply plugin: 'com.google.gms.google-services'
+
+
+
+
+
+

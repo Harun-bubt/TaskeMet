@@ -1,0 +1,544 @@
+<resources>
+
+    <string name="chat_channel_id" translatable="false">MyDefaultChannelID</string>
+    <string name="my_chat_channel" translatable="false">MyDefaultChannelName</string>
+    <string name="notify_channel_description_for_chat" translatable="false">MyDefaultChannelDescription</string>
+
+    <string name="app_name">TaskMet</string>
+    <string name="btnText_Phone">Phone</string>
+    <string name="welcome_text">welcome to Taskmate</string>
+    <string name="sign_in_with">Sign in with</string>
+    <string name="a_6_digit_code_is_send_to">A 6-digit code is send to</string>
+    <string name="_92_1234567">+92 1234567</string>
+    <string name="_sec_left">sec left</string>
+    <string name="_1_20">1 : 20</string>
+    <string name="btn_verify">Verify</string>
+    <string name="btn_continue">Continue</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--API Key-->
+    <string name="map_api_key">AIzaSyD82nzdcYj4ZHdzl1Z8GF8QXGq__hIrFoA</string>
+
+    <string name="home">Home</string>
+    <string name="chat">Chat</string>
+    <string name="post_task">Post Task</string>
+    <string name="post_ad">Post Ad</string>
+    <string name="my_task">My Tasks</string>
+    <string name="profile">Profile</string>
+    <string name="location">Location</string>
+    <string name="image">image</string>
+    <string name="mobile">Mobile</string>
+    <string name="computer">Computer</string>
+    <string name="vehicle">Vehicle</string>
+    <string name="furniture">Furniture</string>
+    <string name="appliances">Appliances</string>
+    <string name="sports">Sports</string>
+    <string name="shopping">Shopping</string>
+    <string name="see_all">View all categories</string>
+    <string name="services">Services</string>
+    <string name="jobs">Jobs</string>
+    <string name="property">Property</string>
+    <string name="travel">Travel</string>
+    <string name="education">Education</string>
+    <string name="development">Development</string>
+    <string name="health">Health</string>
+    <string name="searchHint"><![CDATA[Search Mobiles, jobs & much more…]]></string>
+    <string name="pets_animals"><![CDATA[Pets & animals]]></string>
+    <string name="bike">Bikes</string>
+    <string name="fashion">Fashion</string>
+    <string name="books">Books</string>
+    <string name="kids">Kids</string>
+    <string name="electronics_repair">Electronics Repair</string>
+    <string name="marriage">Marriage</string>
+    <string name="car_rental">Car rental</string>
+    <string name="events">Events</string>
+    <string name="home_delivery">Home Delivery</string>
+    <string name="catering">Catering</string>
+    <string name="electronics">Electronics</string>
+    <string name="house_office_renovation"><![CDATA[House & Office Renovation]]></string>
+    <string name="what_are_you_offer">What are you offer?</string>
+
+
+    //...............All subCategory Arrays................
+
+    //1.mobile
+    <string name="mobile_phone">Mobile Phone</string>
+    <string name="tablets">Tablets</string>
+    <string name="mobile_accessories">Accessories</string>
+    <string-array name="mobiles">
+        <item>@string/mobile_phone</item>
+        <item>@string/tablets</item>
+        <item>@string/mobile_accessories</item>
+
+    </string-array>
+
+
+    //2.computer
+    <string name="personal_computer">Personal Computer</string>
+    <string name="laptops">Laptops</string>
+    <string name="computer_accessories">Accessories</string>
+    <string-array name="computers">
+        <item>@string/personal_computer</item>
+        <item>@string/laptops</item>
+        <item>@string/computer_accessories</item>
+
+    </string-array>
+
+    //3.vehicle
+    <string name="cars">Cars</string>
+    <string name="cars_accessories">Cars Accessories</string>
+    <string name="vehicel_spare_parts">Spare Parts</string>
+    <string name="buses_vans_trucks"><![CDATA[Buses,Vans & Trucks]]></string>
+    <string name="rickshaw_chingchi"><![CDATA[Rickshaw & Chingchi]]></string>
+    <string name="boats">Boats</string>
+    <string name="tractors">Tractors</string>
+    <string name="trailers">Trailers</string>
+    <string name="other_vehicles">Other Vehicles</string>
+    <string-array name="vehicles">
+        <item>@string/cars</item>
+        <item>@string/cars_accessories</item>
+        <item>@string/spare_parts</item>
+        <item>@string/buses_vans_trucks</item>
+        <item>@string/rickshaw_chingchi</item>
+        <item>@string/boats</item>
+        <item>@string/tractors</item>
+        <item>@string/trailers</item>
+        <item>@string/other_vehicles</item>
+
+    </string-array>
+
+    //4.Furniture
+    <string name="sofa">Sofa</string>
+    <string name="chairs">Chairs</string>
+    <string name="beds">Beds</string>
+    <string name="tables_dining"><![CDATA[Tables & Dining]]></string>
+    <string name="paiting_mirrors"><![CDATA[Painting & Mirrors]]></string>
+    <string name="rugs_carpets"><![CDATA[Rugs & Carpets]]></string>
+    <string name="office_furniture">Office Furniture</string>
+    <string name="curtains_blinds"><![CDATA[Curtains & Blinds]]></string>
+    <string name="garden_outdoor"><![CDATA[Garden & Outdoor]]></string>
+    <string name="home_decorations">Home Decoration</string>
+    <string name="other_household_items">Other Household Items</string>
+
+    <string-array name="furnitures">
+        <item>@string/sofa</item>
+        <item>@string/chairs</item>
+        <item>@string/beds</item>
+        <item>@string/tables_dining</item>
+        <item>@string/paiting_mirrors</item>
+        <item>@string/rugs_carpets</item>
+        <item>@string/office_furniture</item>
+        <item>@string/curtains_blinds</item>
+        <item>@string/garden_outdoor</item>
+        <item>@string/home_decorations</item>
+        <item>@string/other_household_items</item>
+
+
+    </string-array>
+
+
+    //5.Appliances
+    <string name="tv"><![CDATA[Television(TV)]]></string>
+    <string name="video">Video</string>
+    <string name="audio">Audio</string>
+    <string name="cameras_accessories"><![CDATA[Cameras & Accessories]]></string>
+    <string name="games">Games</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="generators">Generators</string>
+    <string name="ups">UPS</string>
+    <string name="ac_coolers"><![CDATA[AC & Coolers]]></string>
+    <string name="kitchen_appliances">Kitchen Appliances</string>
+    <string name="fridges_freezers"><![CDATA[Fridges & Freezers]]></string>
+    <string name="washing_machines_dryers"><![CDATA[Washing Machines & Dryers]]></string>
+    <string name="other_home_appliances">Other Home Appliances</string>
+    <string-array name="appliances">
+        <item>@string/tv</item>
+        <item>@string/video</item>
+        <item>@string/audio</item>
+        <item>@string/cameras_accessories</item>
+        <item>@string/games</item>
+        <item>@string/entertainment</item>
+        <item>@string/generators</item>
+        <item>@string/ups</item>
+        <item>@string/ac_coolers</item>
+        <item>@string/kitchen_appliances</item>
+        <item>@string/fridges_freezers</item>
+        <item>@string/washing_machines_dryers</item>
+        <item>@string/other_home_appliances</item>
+
+    </string-array>
+
+    //6.Bikes
+    <string name="motorcycles">Motorcycles</string>
+    <string name="bicycles">Bicycles</string>
+    <string name="scooters">Scooters</string>
+    <string name="spare_parts">Spare Parts</string>
+
+    <string-array name="bikes">
+        <item>@string/motorcycles</item>
+        <item>@string/bicycles</item>
+        <item>@string/scooters</item>
+        <item>@string/spare_parts</item>
+    </string-array>
+
+
+    //7.Sports
+    <string name="football">Football.</string>
+    <string name="cricket">Cricket</string>
+    <string name="badminton">Badminton</string>
+    <string name="volleyball">Volleyball</string>
+    <string name="basketball">Basketball</string>
+    <string name="tennis">Tennis</string>
+    <string name="other_sports">Other Sports</string>
+    <string-array name="sports">
+        <item>@string/football</item>
+        <item>@string/cricket</item>
+        <item>@string/badminton</item>
+        <item>@string/volleyball</item>
+        <item>@string/basketball</item>
+        <item>@string/tennis</item>
+        <item>@string/other_sports</item>
+
+    </string-array>
+
+    //8.Animals
+    <string name="birds">Birds</string>
+    <string name="cats">Cats</string>
+    <string name="hens_assel"><![CDATA[Hens & Aseel]]></string>
+    <string name="dogs">Dogs</string>
+    <string name="horses">Horses</string>
+    <string name="livestock">Livestock</string>
+    <string name="pet_food_accessories"><![CDATA[Pet Food & Accessories]]></string>
+    <string name="other_animals">Other Animals</string>
+
+    <string-array name="animals">
+        <item>@string/birds</item>
+        <item>@string/cats</item>
+        <item>@string/hens_assel</item>
+        <item>@string/dogs</item>
+        <item>@string/horses</item>
+        <item>@string/livestock</item>
+        <item>@string/pet_food_accessories</item>
+        <item>@string/other_animals</item>
+    </string-array>
+
+    //9.fashion
+    <string name="clothes">Clothes</string>
+    <string name="jewellery">Jewellery</string>
+    <string name="make_up">Make Up</string>
+    <string name="hair">Hair</string>
+    <string name="watches">Watches</string>
+    <string name="wedding">Wedding</string>
+    <string name="footwear">Footwear</string>
+    <string name="other_fashion">Other Fashion</string>
+
+    <string-array name="fashions">
+        <item>@string/clothes</item>
+        <item>@string/jewellery</item>
+        <item>@string/make_up</item>
+        <item>@string/hair</item>
+        <item>@string/watches</item>
+        <item>@string/wedding</item>
+        <item>@string/footwear</item>
+        <item>@string/other_fashion</item>
+
+    </string-array>
+
+    //10.Kids
+    <string name="toys">Toys</string>
+    <string name="kids_furniture">Kids Furniture</string>
+    <string name="prams">Prams</string>
+    <string name="walkers">Walkers</string>
+    <string name="kids_bikes">Kids Bikes</string>
+    <string name="kids_accessories">Kids Accessories</string>
+
+    <string-array name="kids">
+        <item>@string/toys</item>
+        <item>@string/kids_furniture</item>
+        <item>@string/prams</item>
+        <item>@string/walkers</item>
+        <item>@string/kids_bikes</item>
+        <item>@string/kids_accessories</item>
+
+    </string-array>
+
+    //11.Books
+    <string name="books_sub">Books</string>
+    <string name="magazines">Magazines</string>
+    <string name="gym_fitness"><![CDATA[Gym & Fitness]]></string>
+    <string name="other">Other</string>
+
+    <string-array name="books">
+        <item>@string/books_sub</item>
+        <item>@string/magazines</item>
+        <item>@string/gym_fitness</item>
+        <item>@string/other</item>
+
+    </string-array>
+    //...............All subCategory Arrays................
+
+    //Job screen All text for spinner..........
+    <string name="online_remote"><![CDATA[Online / remote]]></string>
+    <string name="marketing">Marketing</string>
+    <string name="advertisment">Advertisment</string>
+    <string name="educationJobType">Education</string>
+    <string name="customer_service">Customer Service</string>
+    <string name="sales">Sales</string>
+    <string name="it_networking"><![CDATA[It & Networking]]></string>
+    <string name="hotels">Hotels</string>
+    <string name="tourism">Tourism</string>
+    <string name="administration">Administration</string>
+    <string name="human_resources">Human Resources</string>
+    <string name="accounting_finance"><![CDATA[Accounting & Finance]]></string>
+    <string name="manufacturing">Manufacturing</string>
+    <string name="medical">Medical</string>
+    <string name="domestic_jobs">Domestic jobs</string>
+
+    <string-array name="jobcategory">
+        <item>@string/online_remote</item>
+        <item>@string/marketing</item>
+        <item>@string/advertisment</item>
+        <item>@string/educationJobType</item>
+        <item>@string/customer_service</item>
+        <item>@string/sales</item>
+        <item>@string/it_networking</item>
+        <item>@string/hotels</item>
+        <item>@string/tourism</item>
+        <item>@string/administration</item>
+        <item>@string/human_resources</item>
+        <item>@string/accounting_finance</item>
+        <item>@string/manufacturing</item>
+        <item>@string/medical</item>
+        <item>@string/domestic_jobs</item>
+    </string-array>
+
+
+    <string name="all">All</string>
+
+
+    <string name="all_position">Contract base,Full time job,Part time job</string>
+    <string name="contract_base">Contract base</string>
+    <string name="full_time_job">Full time job</string>
+    <string name="part_time_job">Part time job</string>
+
+    <string-array name="position_type">
+        <item>@string/contract_base</item>
+        <item>@string/full_time_job</item>
+        <item>@string/part_time_job</item>
+    </string-array>
+
+
+    <string name="all_salary">Hourly,Monthly,Weekly,Yearly</string>
+    <string name="hourly">Hourly</string>
+    <string name="monthly">Monthly</string>
+    <string name="weekly">Weekly</string>
+    <string name="yearly">Yearly</string>
+
+    <string-array name="salaryPeriodcategory">
+        <item>@string/hourly</item>
+        <item>@string/weekly</item>
+        <item>@string/monthly</item>
+        <item>@string/yearly</item>
+    </string-array>
+
+
+    <string name="plots_land">Plots or Lands</string>
+    <string name="houses">Houses</string>
+    <string name="apartment_flats"><![CDATA[Apartments & Flats]]></string>
+    <string name="shop_offices"><![CDATA[Shops - Offices]]></string>
+
+
+    <string-array name="propertycategory">
+        <item>@string/plots_land</item>
+        <item>@string/houses</item>
+        <item>@string/apartment_flats</item>
+        <item>@string/shop_offices</item>
+    </string-array>
+
+    <string-array name="propertycategoryWithoutPlot">
+        <item>@string/houses</item>
+        <item>@string/apartment_flats</item>
+        <item>@string/shop_offices</item>
+    </string-array>
+
+
+    <string name="all_area_type">Agricultural,Commercial / Industrial,Residential</string>
+    <string name="all_area_house">Commercial / Industrial,Residential</string>
+
+    <string name="agricultural">Agricultural</string>
+    <string name="commercial_industrial"><![CDATA[ Commercial / Industrial]]></string>
+    <string name="residential">Residential</string>
+
+    <string-array name="areacategory">
+        <item>@string/agricultural</item>
+        <item>@string/commercial_industrial</item>
+        <item>@string/residential</item>
+    </string-array>
+    <string-array name="areacategoryWithOutAgriculture">
+        <item>@string/commercial_industrial</item>
+        <item>@string/residential</item>
+    </string-array>
+
+    //Job screen All text for spinner..........
+
+    <string name="custom_title">our product</string>
+    <string name="add_post_details">Add post details</string>
+    <string name="post_title">Post Title *</string>
+    <string name="i_e_i_want_to_sell_my_mobile">i.e. I want to sell my mobile.</string>
+    <string name="i_want_to_sell_my_mobile">i.e. I want to sell my mobile.</string>
+    <string name="job_type">Job type*</string>
+
+    <string name="all_job_types">Offering Job,CV / Resume</string>
+    <string name="cv_resume">CV / Resume</string>
+    <string name="offering_job">Offering Job</string>
+    <string name="enter_number">enter number</string>
+    <string name="dash"> - </string>
+    <string name="btn_sign_up">Sign up</string>
+    <string name="select_country_country">Select Currency</string>
+    <string name="select_location">Select Location</string>
+    <string name="add_email">Add your email</string>
+    <string name="add_name">Add your name</string>
+    <string name="log_out">Log out</string>
+    <string name="confirm_address">Confirm Location</string>
+    <string name="search_address">Search address</string>
+    <string name="log_in">Log in</string>
+    <string name="enter_number_to_login">Enter number to Login</string>
+    <string name="brand">Brand</string>
+    <string name="select_category">Select Category</string>
+
+    <string name="all_sell_rent">Rent,Sell</string>
+    <string name="rent">Rent</string>
+    <string name="sell">Sell</string>
+
+    <string name="Yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="total_floors">Total Floors*</string>
+    <string name="add_property_details">Add property details</string>
+    <string name="here_we_shows_complete_the_title_of_the_post">Here we shows complete the title of the post</string>
+    <string name="descriptiontext">Here we show the description of the post.The post description contains
+                                   all the details of good or services you are offering.</string>
+    <string name="edit_post">Edit Post</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="warning">Warning</string>
+    <string name="edit_image_warning">Updated Images will be replace with your Ad\'s current Images</string>
+    <string name="image_updated">Ad Images Updated Successfully</string>
+    <string name="contragulations_text">Congratulation\'s</string>
+    <string name="gc">GC</string>
+    <string name="rc">RC</string>
+    <string name="features">Features</string>
+    <string name="make_ad_premium">Make Ad Premium</string>
+    <string name="ad_premium">Ad Premium</string>
+    <string name="prices">Prices</string>
+
+    //..... Marriage spinner Text.....................
+    <string name="muslim">Muslim</string>
+    <string name="hindu">Hindu</string>
+    <string name="christian">Christian</string>
+    <string name="parsi">Parsi</string>
+
+
+    <string-array name="religionArrary">
+        <item>@string/muslim</item>
+        <item>@string/hindu</item>
+        <item>@string/christian</item>
+        <item>@string/parsi</item>
+    </string-array>
+
+    <string name="phd">Ph.D.</string>
+    <string name="masters">Masters</string>
+    <string name="bachelors">Bachelors</string>
+    <string name="civil_service">Civil Service</string>
+    <string name="professional_certification">Professional Certifications</string>
+    <string name="diploma">Diploma</string>
+    <string name="higher_secondary_secondary"><![CDATA[ Higher Secondary / Secondary]]></string>
+
+
+    <string-array name="educationArray">
+        <item>@string/phd</item>
+        <item>@string/masters</item>
+        <item>@string/bachelors</item>
+        <item>@string/civil_service</item>
+        <item>@string/professional_certification</item>
+        <item>@string/diploma</item>
+        <item>@string/higher_secondary_secondary</item>
+    </string-array>
+
+    <string name="government">Government</string>
+    <string name="privateJob">Private</string>
+    <string name="defence">Defence</string>
+    <string name="self_employed">Self Employed</string>
+    <string name="business">Business</string>
+    <string name="not_working">Not Working</string>
+    <string name="main_category">Main Categories</string>
+    <string name="recend_ads">Recent Ads</string>
+    <string-array name="jobArray">
+        <item>@string/government</item>
+        <item>@string/privateJob</item>
+        <item>@string/defence</item>
+        <item>@string/self_employed</item>
+        <item>@string/business</item>
+        <item>@string/not_working</item>
+    </string-array>
+    <string name="type_a_message">Type a message</string>
+    <string name="enter_name">Enter name</string>
+    <array name="initial_slider_values">
+        <item>2000</item>
+        <item>3500</item>
+    </array>
+
+    <string name="admob_banner_ad_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="screenshot_verify1"><![CDATA[Please transfer the payment to following mobile account & send below the Transaction Screenshot. We\'ll be verify & send ]]></string>
+    <string name="screenshot_verify2"><![CDATA[in your wallet in few minutes.]]></string>
+    <string name="account_type_jazzcash_mobile_account">Account Type: JazzCash Mobile Account</string>
+    <string name="account_title_abdul_waheed">Account Title: Abdul Waheed</string>
+    <string name="account_number_92_305_8971088">Account Number # +92 305 8971088</string>
+    <string name="step1_upload_screenshot"><b>Step1:</b> Enter transaction TID number.</string>
+    <string name="step2_upload_screenshot"><b>Step1:</b> Upload a screenshot of transaction.</string>
+    <string name="step3_confirm_your_transaction"><b>Step2:</b> Now press below button to confirm your transaction.</string>
+    <string name="website_name">thetaskmet.com</string>
+    <string name="no_active_connection">No internet connection found. Please check your network settings</string>
+    <string name="network_settings">Network settings</string>
+    <string name="hide">Hide Ads</string>
+    <string name="show">Show Ads</string>
+    <string name="enter_floor">Enter floor number</string>
+    <string name="total_floor">Enter total floors</string>
+    <string name="totalFloor">Total Floors</string>
+    <string name="make_ac_premium">Get TaskMet Premium Account</string>
+    <string name="get_pre_ac">Get Premium Account</string>
+    <string name="pre_ac_features">Premium Features</string>
+    <string name="get_premium_account">Get Premium Account</string>
+    <string name="contact_us">Contact us</string>
+    <string name="phone">Phone</string>
+    <string name="call">Call</string>
+    <string name="email">Email</string>
+    <string name="main_office">Main Office</string>
+    <string name="direction">Direction</string>
+    <string name="map_location">Map Location</string>
+    <string name="enter_tid">Enter transaction TID number</string>
+    <string name="no_recent_ad">No Recent Ads Found</string>
+    <string name="premium">Premium</string>
+
+    <string name="unmarried">Unmarried</string>
+    <string name="divorced">Divorced</string>
+
+    <string name="widow">Widow</string>
+    <string name="widower">Widower</string>
+
+    <string name="separated">Separated</string>
+    <string name="married">Married</string>
+
+    <string name="all_martial_status">Unmarried,Divorced,Widow,Widower,Separated,Married</string>
+
+</resources>
